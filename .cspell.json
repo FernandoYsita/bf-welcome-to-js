@@ -2,12 +2,21 @@
   "language": "en",
   "words": [
     "asdf",
-    "hackyourfuture",
-    "monospace",
-    "Precourse",
     "distractor",
     "distractors",
-    "typeof"
+    "eference",
+    "excution",
+    "hackyourfuture",
+    "ingrad",
+    "monospace",
+    "Precourse",
+    "typeof",
+    "welf"
   ],
-  "ignorePaths": ["node_modules/**", "**/*.json", "**/*.mp4", "**/*.svg"]
+  "ignorePaths": [
+    "node_modules/**",
+    "**/*.json",
+    "**/*.mp4",
+    "**/*.svg"
+  ]
 }

@@ -3,20 +3,20 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: Crhome
+  name:Syntaxerror
+  message: Identifier 'tree' has already been declared
+ 
 
-  name:
-  message:
-
-  location:
+  location: line 22
 
   life cycle:
 
-  the mistake:
+  the mistake: Identifier 'tree' has already been declared
 
-  the fix(es):
+  the fix(es): remove the second declaration of tree and only assign the new value to the existing variable.
 */
 
 let tree = 'oak';
 
-let tree = 'birch';
+tree = 'birch';

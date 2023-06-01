@@ -6,21 +6,20 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: CChrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: invalid or unexpected token
 
-  location:
+  location: Line 23
 
   life cycle:
 
-  the mistake:
+  the mistake: invalid or unexpected token
 
-  the fix(es):
+  the fix(es): remove space between lines
 */
 
-const a = 'this is
-two lines';
+const a = 'this is two lines';
 
 

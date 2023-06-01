@@ -3,12 +3,12 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment:Chrome  
 
-  name:
+  name: ReferenceError
   message:
 
-  location:
+  location:  line 24
 
   life cycle:
 
@@ -16,15 +16,14 @@ console.log('--- in execution phase ---');
 
   the fix(es):
 */
-
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
+
+let isValidUserName; // Declare the variable here
 
 if (userName.length > 3) {
   isValidUserName = true;
 }
-
-let isValidUserName;
 
 if (userName.length <= 3) {
   isValidUserName = false;

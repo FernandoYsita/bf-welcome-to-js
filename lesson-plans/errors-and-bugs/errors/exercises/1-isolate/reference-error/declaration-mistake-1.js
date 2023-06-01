@@ -3,20 +3,20 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: google chrome
 
-  name:
-  message:
+  name: refrence error
+  message: ReferenceError: welf is not defined
 
-  location:
+  location: line 20
 
   life cycle:
 
-  the mistake:
+  the mistake: there is not declaration for welf
 
-  the fix(es):
+  the fix(es): declare welf
 */
 
-welf = 'ingrad';
+const welf = 'ingrad';
 
 console.log(welf);
