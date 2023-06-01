@@ -1,27 +1,20 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
-
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name:Syntaxerror
+  message: Unexpected number
 
-  location:
+  location: line 25
 
-  life cycle:
+  life cycle: excution
 
-  the mistake:
+  the mistake: name a variable starting with numbers
 
-  the fix(es):
+  the fix(es): give it another name
 */
 
-
-const 3 = 'three';
-
-
+const number3 = 'three';

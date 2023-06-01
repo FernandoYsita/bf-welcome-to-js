@@ -23,6 +23,7 @@ whenFormDataChanges('input', () => {
   }
 
   // --- display the pyramid ---
+  // type test
 
   displayString('out', pyramid);
 });

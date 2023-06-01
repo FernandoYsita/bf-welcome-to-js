@@ -3,20 +3,22 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment:Chrome
 
-  name:
-  message:
+  name: ReferenceError:
+  message: cant not access 'tomatoes' before initialization
+ 
 
-  location:
+  location: line 20
 
-  life cycle:
+  life cycle: excution
 
-  the mistake:
+  the mistake: cant not access 'tomatoes'
 
-  the fix(es):
+  the fix(es): give acces 'tomatoes'
 */
+
+let tomatoes = 'fresh';
 
 console.log(tomatoes);
 
-let tomatoes = 'fresh';
