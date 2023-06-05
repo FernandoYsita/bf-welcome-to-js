@@ -15,7 +15,7 @@
 // declare using let: pattern
 // initialize to "."
 let pattern = '.';
-
+console.log(pattern);
 /*
   variable assignments go from the right side of `=` to the left
 
@@ -28,6 +28,7 @@ let pattern = '.';
 //    -> ".@"
 // assign pattern: ".@"
 pattern = pattern + '@';
+console.log(pattern);
 
 /*
   the value in a variable can changes during a program
@@ -41,7 +42,7 @@ pattern = pattern + '@';
 //    -> "@.@"
 // assign pattern: "@.@"
 pattern = '@' + pattern;
-
+console.log(pattern);
 /*
   a variable must be read every time it is used
   even if it is used twice in the same line@
@@ -53,6 +54,6 @@ pattern = '@' + pattern;
 //    -> "@.@@.@"
 // assign pattern: "@.@@.@"
 pattern = pattern + pattern;
-
+console.log(pattern);
 // read pattern: "@.@@.@"
 pattern;

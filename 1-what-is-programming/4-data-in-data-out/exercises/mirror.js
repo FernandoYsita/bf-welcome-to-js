@@ -3,21 +3,22 @@
 /* Mirror
 
   Data In:
-
+    - None
 
   Data Out:
-
+    - None
 
   Test Cases:
-
+    - Test with empty input
+    - Test with non-empty input
 
 */
 
 /* --- gather user input --- */
 
 let input = null;
-while (input === null) {
-  input = prompt('enter some text to mirror');
+while (input === null || input === '') {
+  input = prompt('Enter some text to mirror');
   console.log(input);
 }
 
@@ -31,4 +32,4 @@ for (let character of input) {
 
 /* --- display mirrored text to the user --- */
 
-alert(mirrored);
+console.log(mirrored);

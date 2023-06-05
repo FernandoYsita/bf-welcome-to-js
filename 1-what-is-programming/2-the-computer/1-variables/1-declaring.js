@@ -15,7 +15,13 @@
 */
 
 let turtle;
+turtle = `leonardo`;
+console.log(`turtule`);
 
 let food;
+food = `tacos`;
+console.log(`food`);
 
 let x;
+x = `93`;
+console.log(`x`);

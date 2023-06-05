@@ -18,9 +18,12 @@
 // trace the program a few times with different values
 
 let firstName = 'Pieter';
+console.log(firstName);
 // let firstName = 'Blake';
 // let firstName = 'George';
 
 let greeting = 'hello ' + firstName + '!';
-
+console;
+console.log(greeting);
 greeting = 'good bye ' + firstName + '.';
+console.log(greeting);

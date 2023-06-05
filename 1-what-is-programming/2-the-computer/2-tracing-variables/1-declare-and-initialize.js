@@ -22,7 +22,7 @@ let onlyDeclared;
 
 // read onlyDeclared: undefined
 onlyDeclared;
-
+console.log(onlyDeclared); //output: undefined
 /* --- declaring and initializing --- */
 
 // declare declaredAndInitialized using let
@@ -31,3 +31,4 @@ let declaredAndInitialized = 'hello';
 
 // read declaredAndInitialized: "hello"
 declaredAndInitialized;
+console.log(declaredAndInitialized); // Output: hello
