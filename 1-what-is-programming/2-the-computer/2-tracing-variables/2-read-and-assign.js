@@ -17,17 +17,18 @@
 // declare name using let
 // initialize to "Gödel"
 let name = 'Gödel';
+console.log(name);
 
 /*
   the initialized value is now stored in this variable:
 */
 
 // read name: "Gödel"
-name;
+name; // Output: Gödel
 
 // assign name: "Hofstadter"
 name = 'Hofstadter';
-
+console.log(name);
 /*
   a variable's value can change during a program
   each time you read it there may be a different value stored
@@ -38,7 +39,7 @@ name;
 
 // assign name: "Schoenberg"
 name = 'Schoenberg';
-
+console.log(name);
 /*
   a variable's final value is the last value assigned to it in the program
 */

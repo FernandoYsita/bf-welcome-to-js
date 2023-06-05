@@ -3,21 +3,23 @@
 /* Remove Spaces
 
   Data In:
-
+    - None
 
   Data Out:
-
+    - None
 
   Test Cases:
-
+    - Test with empty input
+    - Test with input containing spaces
+    - Test with input containing no spaces
 
 */
 
 /* --- gather user input --- */
 
 let input = null;
-while (input === null) {
-  input = prompt('enter some text, all the spaces will be removed');
+while (input === null || input.trim() === '') {
+  input = prompt('Enter some text, all the spaces will be removed');
   console.log(input);
 }
 
@@ -26,14 +28,14 @@ while (input === null) {
 let spaceless = '';
 for (let character of input) {
   if (character !== ' ') {
-    spaceless = spaceless + character;
+    spaceless += character;
     console.log(spaceless);
   }
 }
 
 /* --- create a final message --- */
 
-let message = 'before: ' + input + '\nafter: ' + spaceless;
+let message = 'Before: ' + input + '\nAfter: ' + spaceless;
 console.log(message);
 
 /* --- display message to the user --- */

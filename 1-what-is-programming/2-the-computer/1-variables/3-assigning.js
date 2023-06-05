@@ -18,3 +18,7 @@ food = 'peanut';
 
 let x = 'abc';
 x = '-|-';
+
+console.log(`turtule name:`, turtle);
+console.log(`favorite food:`, food);
+console.log(`Variable x:`, x);

@@ -3,29 +3,30 @@
 /* Reverse
 
   Data In:
-
+    - None
 
   Data Out:
-
+    - None
 
   Test Cases:
-
+    - Test with empty input
+    - Test with non-empty input
 
 */
 
 /* --- gather user input --- */
 
 let input = null;
-while (input === null) {
-  input = prompt('enter some text to reverse');
+while (input === null || input === '') {
+  input = prompt('Enter some text to reverse');
   console.log(input);
 }
 
 /* --- reverse the input text --- */
 
 let reversed = '';
-for (let character of input) {
-  reversed = character + reversed;
+for (let i = input.length - 1; i >= 0; i--) {
+  reversed += input[i];
   console.log(reversed);
 }
 

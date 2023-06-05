@@ -13,9 +13,12 @@
   - initial value: what you want to store in the variable
 
 */
+'use strict';
 
 let turtle = 'Vinnie';
-
 let food = 'lettuce';
-
 let x = 'abc';
+
+console.log('Turtle name:', turtle);
+console.log('Favorite food:', food);
+console.log('Variable x:', x);

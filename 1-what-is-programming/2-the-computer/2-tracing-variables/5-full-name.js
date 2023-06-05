@@ -18,15 +18,20 @@
 // trace the program a few times with different values
 
 let first = 'Pieter';
+console.log(first);
 // let first = 'Blake';
 // let first = 'George';
 
 let last = 'Rabbit';
+console.log(last);
 // let last = 'Wozzeck';
 // let last = 'Schoenberg';
 
 let fullName = first + ' ' + last;
+console.log(fullName);
 
 let greeting = 'hello ' + fullName;
+console.log(greeting);
 
 greeting = 'good bye ' + fullName;
+console.log(greeting);
