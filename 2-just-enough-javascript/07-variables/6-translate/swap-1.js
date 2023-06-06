@@ -1,13 +1,20 @@
-// #todo
 
 'use strict';
 
-// a <- 'y'
+let a = 'y';
+let b = 'x';
 
-// b <- 'x'
+let temp = a;
+a = b;
+b = temp;
 
-// temp <- a
+console.log(a); // 'x'
+console.log(b); // 'y'
 
-// a <- b
-
-// b <- temp
+/*
+a <- 'y'
+b <- 'x'
+temp <- a
+a <- b
+b <- temp
+*/

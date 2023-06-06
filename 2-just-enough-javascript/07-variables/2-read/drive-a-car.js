@@ -2,15 +2,15 @@
 
 'use strict';
 
-let phrase = 'a';
+let phrase = 'a'; // Variable declaration (yellow)
 
-phrase = ' ' + phrase + ' ';
+phrase = ' ' + phrase + ' '; // Variable use (green) connected to declaration
 
-phrase = phrase + 'car';
+phrase = phrase + 'car'; // Variable use (green) connected to previous assignment
 
-phrase = 'drive' + phrase;
+phrase = 'drive' + phrase; // Variable use (green) connected to previous assignment
 
-console.log(phrase); // 'drive a car'
+console.log(phrase); // Output (no variable use)
 
 /*
   - mark each variable use with a different color (like in the ?variables lens)

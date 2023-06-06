@@ -2,7 +2,7 @@
 
 'use strict';
 
-let word = '';
+let word = 'be';
 // let word = 'a';
 // let word = 'be';
 // let word = 'eat';

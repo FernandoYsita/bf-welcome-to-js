@@ -12,10 +12,7 @@ let word = 'a';
 let message;
 if (word.length <= 2) {
   message = 'a short word';
-} else if (word.length < 3) {
-  // why is this path unreachable?
-  message = 'unreachable path!';
-} else if (word.length < 5) {
+} else if (word.length >= 3 && word.length < 5) {
   message = 'a perfect word';
 } else {
   message = 'a long word';

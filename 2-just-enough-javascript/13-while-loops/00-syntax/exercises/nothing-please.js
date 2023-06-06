@@ -1,57 +1,34 @@
 // prettier-ignore
-{ // so prettier does not remove the extra spacing
+{
+  // Ensure prettier doesn't remove extra spacing
 
-'use strict';
+  'use strict';
 
-// ::::: don't forget to trace the program! :::::
+  // ::::: don't forget to trace the program! :::::
 
-/* --- gather user input --- */
+  /* --- gather user input --- */
 
+  let input = null;
 
-
-let input = null;
-
-
-while (input === null) {
-
-
+  while (input === null) {
     input = prompt('type nothing and click "enter"');
-
-
     console.log(input);
+  }
 
+  /* --- create a message --- */
 
-}
+  let message = '';
 
-/* --- create a message --- */
-
-
-
-let message = '';
-
-
-if (input === '') {
-
-
+  if (input === '') {
     message = 'thank you for nothing!';
-
-
-} else {
-
-
+  } else {
     message = 'this is not nothing: ' + input;
+  }
 
+  console.log(message);
 
+  /* --- display message to the user --- */
+
+  alert(message);
 }
 
-console.log(message);
-
-
-/* --- display message to the user --- */
-
-
-
-alert(message);
-
-
-}
