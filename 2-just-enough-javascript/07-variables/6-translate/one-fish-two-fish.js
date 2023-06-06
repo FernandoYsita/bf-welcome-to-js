@@ -1,11 +1,24 @@
 // #todo
+let phrase = ' ';
 
-'use strict';
+phrase = 'one' + phrase + 'fish';
+console.log(phrase); // 'one fish'
 
-// phrase <- ' '
+phrase = phrase + ' two';
+console.log(phrase); // 'one fish two'
 
-// phrase <- 'one' + phrase + 'fish'
+phrase = phrase + ' fish';
+console.log(phrase); // 'one fish two fish'
 
-// phrase <- phrase + ' two'
+/*
+phrase <- ' '
 
-// phrase <- phrase + ' fish'
+phrase <- 'one' + phrase + 'fish'
+console.log(phrase); // 'one fish'
+
+phrase <- phrase + ' two'
+console.log(phrase); // 'one fish two'
+
+phrase <- phrase + ' fish'
+console.log(phrase); // 'one fish two fish'
+*/

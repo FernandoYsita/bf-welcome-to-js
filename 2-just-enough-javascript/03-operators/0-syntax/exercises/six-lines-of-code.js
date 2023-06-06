@@ -5,23 +5,17 @@
 
 'use strict';
 
+// string
+console.log('hello');
 
-2 + 2;
+// boolean
+console.log(true);
 
+// undefined
+console.log();
 
-true === true;
-
-
-2 === '2';
-
-
-console.log('hel' + 'o!');
-
-
-console.log(2 === 2);
-
-
-console.log(true === false);
+// string, boolean
+console.log('are you hungry?', false);
 
 
 }
