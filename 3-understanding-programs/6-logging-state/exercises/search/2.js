@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -22,6 +20,10 @@ while (!userConfirmedPhrase) {
 }
 
 const caseSensitive = confirm('do you want a case-sensitive search?');
+console.log(
+  'Search type:',
+  caseSensitive ? 'Case-sensitive' : 'Case-insensitive',
+);
 
 let query = '';
 
@@ -47,20 +49,3 @@ if (caseSensitive) {
 }
 
 let doesOrNot = '';
-if (phraseIncludesQuery) {
-  doesOrNot = 'does';
-} else {
-  doesOrNot = 'does not';
-}
-
-alert(
-  '"' +
-    phrase +
-    '" ' +
-    doesOrNot +
-    ' include "' +
-    query +
-    '"\n\n' +
-    'case sensitive: ' +
-    caseSensitive,
-);

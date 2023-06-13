@@ -16,9 +16,9 @@ let likesApples = confirm('do you like apples?');
 
 let greeting = 'hello, ';
 if (likesApples) {
-  greeting + 'welcome to my apple garden';
+  greeting += 'welcome to my apple garden'; // Concatenate the string using '+='
 } else {
-  greeting + 'welcome to my orange garden';
+  greeting += 'welcome to my orange garden'; // Concatenate the string using '+='
 }
 
 alert(greeting);

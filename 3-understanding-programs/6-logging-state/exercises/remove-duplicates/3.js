@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -20,8 +18,11 @@ let noRepetitions = '';
 for (const next of phrase) {
   if (next !== previous) {
     noRepetitions = noRepetitions + next;
+  } else {
+    console.log('Removed letter:', next);
   }
   previous = next;
 }
 
 alert(noRepetitions);
+

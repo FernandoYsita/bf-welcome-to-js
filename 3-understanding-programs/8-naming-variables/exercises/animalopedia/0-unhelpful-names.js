@@ -1,21 +1,41 @@
-// #todo
-
 'use strict';
 
 /*
   _a:
-    declaration:
-      init:
-      types:
-      scopes:
-    reads:
-      scopes:
-      checks:
-    assignments:
-      types:
-      scopes:
+    declaration: 
+      init: yes
+      types: object
+      scopes: global
+    reads: 5
+      scopes: glopal, while
+      checks: while
+    assignments: 1
+      types: string
+      scopes: global
 
+      _b:
+    declaration: 
+      init: yes
+      types: string
+      scopes: global
+    reads: 4
+      scopes: glopal, while
+      checks: while
+    assignments: 1
+      types: string
+      scopes: global
 
+      _c:
+    declaration: 
+      init: yes
+      types: boolean
+      scopes: global
+    reads: 2
+      scopes: else if
+      checks: while
+    assignments: 1
+      types: boolean
+      scopes: if
 */
 
 alert(
