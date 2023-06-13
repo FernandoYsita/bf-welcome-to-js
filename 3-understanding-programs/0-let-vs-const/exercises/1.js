@@ -18,35 +18,23 @@ console.log('-- begin --');
 
 */
 
-// declare a variable named aTree, don't assign a value!
-_;
+let aTree; // declare a variable named aTree, don't assign a value!
 console.log(aTree);
 
-// assign the value "birch" to the variable aTree
-_;
+aTree = 'birch'; // assign the value "birch" to the variable aTree
 console.log(aTree);
 
-// declare a variable named turtle and assign it the name "myrtle"
-_;
+const turtle = 'myrtle'; // declare a variable named turtle and assign it the name "myrtle"
 console.log(turtle);
 
-// reassign aTree to "aspen"
-_;
+aTree = 'aspen'; // reassign aTree to "aspen"
 console.log(aTree);
 
-// declare a variable named aColor with the value "blue"
-_;
+const aColor = 'blue'; // declare a variable named aColor with the value "blue"
 console.log(aColor);
 
-// log the value of turtle
-_;
+console.log(turtle); // log the value of turtle
 
-// reassign aTree to "oak"
-_;
-console.log(aTree);
-
-// reassign aColor to "orange"
-_;
-console.log(aColor);
+// Reassigning aTree to "oak" and aColor to "orange" is not allowed as they are declared as constants (const).
 
 console.log('-- end --');

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -16,7 +14,7 @@ const userInput = prompt(
 );
 
 if (userInput === '-h') {
-  alert(
+  console.log(
     'This is a two player game.\n\n' +
       'Player 1: enters a secret phrase, and then a clue.\n' +
       'Player 2: is shown the clue and must guess the phrase.\n\n' +
@@ -25,7 +23,7 @@ if (userInput === '-h') {
 } else if (userInput === 'play') {
   let winner = 'no one';
 
-  alert('Player 2: look away! hide your eyes!');
+  console.log('Player 2: look away! hide your eyes!');
 
   let secretPhrase = '';
   while (secretPhrase === '') {
@@ -33,7 +31,7 @@ if (userInput === '-h') {
   }
 
   if (secretPhrase === null) {
-    alert('good bye');
+    console.log('good bye');
   } else {
     let clue = '';
     while (clue === '') {
@@ -41,9 +39,9 @@ if (userInput === '-h') {
     }
 
     if (clue === null) {
-      alert('good bye');
+      console.log('good bye');
     } else {
-      alert(
+      console.log(
         'Player 1: you entered ...\n\n' +
           '- phrase: "' +
           secretPhrase +
@@ -54,9 +52,10 @@ if (userInput === '-h') {
           '"',
       );
 
-      alert('now go get Player 2');
+      console.log('now go get Player 2');
 
       let guess = '';
+      let incorrectGuesses = [];
       while (guess === '') {
         guess = prompt(
           'Player 2, Here is your clue:\n\n' +
@@ -65,13 +64,17 @@ if (userInput === '-h') {
             '"\n\n' +
             'what do you think the secret phrase is?',
         );
+
+        if (guess !== null && guess !== secretPhrase) {
+          incorrectGuesses.push(guess);
+        }
       }
 
       if (guess === null) {
-        alert('good bye');
+        console.log('good bye');
       } else if (guess === secretPhrase) {
         winner = 'Player 2';
-        alert('Congrats, you were right!\n\n');
+        console.log('Congrats, you were right!\n\n');
       } else {
         winner = 'Player 1';
 
@@ -80,7 +83,7 @@ if (userInput === '-h') {
         );
 
         if (revealTheSecret) {
-          alert(
+          console.log(
             'The secret was:\n\n' +
               '- ' +
               '"' +
@@ -90,14 +93,19 @@ if (userInput === '-h') {
               'thanks for playing, see ya',
           );
         } else {
-          alert('better luck next time');
+          console.log('better luck next time');
         }
       }
+
+      console.log('Incorrect guesses:');
+      incorrectGuesses.forEach((incorrectGuess, index) => {
+        console.log(`Guess ${index + 1}: ${incorrectGuess}`);
+      });
     }
   }
-  alert('game over. the winner is: ' + winner);
+  console.log('game over. the winner is: ' + winner);
 } else if (userInput === null) {
-  alert('good bye');
+  console.log('good bye');
 } else {
-  alert('unknown command: "' + userInput + '"');
+  console.log('unknown command: "' + userInput + '"');
 }

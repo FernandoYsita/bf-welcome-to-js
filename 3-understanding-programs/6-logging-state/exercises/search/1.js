@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -7,12 +5,15 @@
     and only the invalid inputs!
 */
 
+let invalidInputs = [];
+
 let phrase = '';
 
 let userConfirmedPhrase = false;
 while (!userConfirmedPhrase) {
   phrase = prompt('enter a phrase to search');
   if (phrase === null) {
+    invalidInputs.push('Phrase');
     continue;
   }
 
@@ -29,6 +30,7 @@ while (!userConfirmedQuery) {
     'enter a search query, this program will check if it exists in your phrase',
   );
   if (query === null) {
+    invalidInputs.push('Query');
     continue;
   }
 
@@ -62,3 +64,6 @@ alert(
     'case sensitive: ' +
     caseSensitive,
 );
+
+console.log('Invalid inputs:', invalidInputs);
+

@@ -1,21 +1,37 @@
-// #todo
-
 'use strict';
 
 /*
   _a:
     declaration:
-      init:
-      types:
-      scopes:
-    reads:
-      scopes:
-      checks:
-    assignments:
-      types:
-      scopes:
+      init: yes
+      types: number
+      scopes: global
+    reads: 3
+      scopes: while
+      checks:if
 
+_b:
+    declaration:
+      init: yes
+      types: string
+      scopes: global
+    reads: 2
+      scopes: while, global
+    assignments: 1
+      types: string
+      scopes: while
 
+_c:
+    declaration:
+      init: yes
+      types: string
+      scopes: while
+    reads: 3
+      scopes: while
+      checks:if
+
+_d:
+    declaration: use only for cancel
 */
 
 alert('you will need to enter strings with "e" in the right place');

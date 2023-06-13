@@ -1,9 +1,10 @@
-// #todo
-
 'use strict';
 
 /* generic
 
-  _a -> __:
+  _a -> input
+  _b -> output
+  _c -> characters
+  _d -> vowels
 
 */
